@@ -1,0 +1,16 @@
+/**
+*   Return the second largest number in the array.
+*   @param {Number[]} nums - An array of numbers.
+*   @return {Number} The second largest number in the array.
+**/
+function getSecondLargest(nums) {
+    // Complete the function
+    let temp = [];
+    for(let e of nums) {
+        if (temp.indexOf(e) === -1) {
+            temp.push(e);
+        } 
+    }
+    temp.sort((x,y) => x < y);
+    return temp[1];
+}
