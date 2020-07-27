@@ -1,0 +1,5 @@
+function getGrade(score) {
+    let grade;
+    // Write your code here
+    return 'FEDCBA'[parseInt((score > 0 ? score - 1 : 0) / 5)];
+}
